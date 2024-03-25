@@ -6,6 +6,14 @@ public class RubberList {
 
     private Node last;
 
+    public Node getFirst() {
+        return first;
+    }
+
+    public Node getLast() {
+        return last;
+    }
+
     public int size() {
         return size;
     }
@@ -93,17 +101,25 @@ public class RubberList {
     }
 
     public static class Node {
+        private Node prev;
+        private int item;
+        private Node next;
 
-        int item;
 
-        Node next;
 
-        Node prev;
-
-        public Node(Node prev, int element, Node next) {
-            this.item = element;
+        public Node(Node prev, int item, Node next) {
+            this.item = item;
             this.next = next;
             this.prev = prev;
+        }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "prev=" + (prev == null? null : "<-link") +
+                    ", item=" + item +
+                    ", next=" + (next == null? null : "link->") +
+                    '}';
         }
     }
 
