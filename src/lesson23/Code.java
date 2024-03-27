@@ -1,4 +1,4 @@
-package lesson31;
+package lesson23;
 
 public class Code {
 }

@@ -9,6 +9,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/lesson31/lambdaExamples" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lesson31" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/lesson29" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/consultation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lesson30" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lesson23" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lesson32" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lesson32" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lesson33" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/lesson34" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
