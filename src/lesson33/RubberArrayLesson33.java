@@ -1,11 +1,15 @@
-public class RubberArray<E> {
+import org.jetbrains.annotations.NotNull;
+
+import java.util.Iterator;
+
+public class RubberArrayLesson33<E> implements Iterable<E> {
 
     private final int INIT_DATA_SIZE = 10;
     private final float EXTEND_INDEX = 1.5f;
     private Object[] data;
     private int length;
 
-    public RubberArray() {
+    public RubberArrayLesson33() {
         data = new Object[INIT_DATA_SIZE];
         length = 0;
     }
@@ -55,6 +59,24 @@ public class RubberArray<E> {
         return -1;
     }
 
+    @NotNull
+    @Override
+    public Iterator<E> iterator() {
+        return new Itr();
+    }
+
+    private class Itr implements Iterator<E> {
+        private int cursor = 0;
+        @Override
+        public boolean hasNext() {
+            return length > cursor;
+        }
+
+        @Override
+        public E next() {
+            return (E) data[cursor++];
+        }
+    }
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("[");
@@ -66,4 +88,7 @@ public class RubberArray<E> {
         }
         return sb.append("]").toString();
     }
+
+
+
 }
