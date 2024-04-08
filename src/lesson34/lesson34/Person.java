@@ -1,3 +1,5 @@
+package lesson34;
+
 import org.jetbrains.annotations.NotNull;
 
 public class Person implements Comparable<Person>{

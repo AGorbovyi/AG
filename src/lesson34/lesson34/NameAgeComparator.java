@@ -1,5 +1,6 @@
-import java.util.Comparator;
+package lesson34;
 
+import java.util.Comparator;
 public class NameAgeComparator implements Comparator<Person> {
 
     @Override
