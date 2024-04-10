@@ -1,7 +1,6 @@
 package lesson35;
 
 import lesson34.Person;
-import lesson35.HashTable;
 
 import java.util.*;
 
@@ -58,7 +57,7 @@ public class lesson35 {
 
         System.out.println("============== HashTable ===============");
 
-        HashTable<String, Person> stringMap = new HashTable<>();
+        HashTableNew<String, Person> stringMap = new HashTableNew<>();
         stringMap.put("12D", new Person("Luke", 20));
         stringMap.put("A5Y", new Person("Mark", 24));
         System.out.println(stringMap);
