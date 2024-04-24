@@ -32,17 +32,18 @@ public class Password {
         Password = "Password";
         Username = "Anton";
 
+        System.out.println("Please enter your login details");
         Scanner input1 = new Scanner(System.in);
-        System.out.print("Enter Username : ");
+        System.out.print("Username: ");
         String username = input1.next();
 
         Scanner input2 = new Scanner(System.in);
-        System.out.print("Enter Password : ");
+        System.out.print("Password: ");
         String password = input2.next();
 
         if (username.equals(Username) && password.equals(Password)) {
 
-            System.out.println("Welcome back Anton!");
+            System.out.println("Welcome back!");
         }
 
         else if (username.equals(Username)) {
