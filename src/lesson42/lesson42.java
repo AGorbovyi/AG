@@ -1,0 +1,30 @@
+package lesson42;
+
+import java.util.Collection;
+import java.util.Iterator;
+
+public class lesson42 {
+    public static void main(String[] args) {
+        LibraryBookRepository repository = new LibraryBookRepository();
+        repository.init();
+        Collection<LibraryBook> books = repository.values();
+
+        int count = 0;
+        Iterator<LibraryBook> iterator = books.iterator();
+        while (iterator.hasNext()){
+            LibraryBook book = iterator.next();
+            if (book.getGenre().equals("Poetry")) {
+                count++;
+            }
+        }
+        System.out.println(count);
+
+        // using stream
+        count = books.stream()
+                .filter(b -> b.getGenre().equals("Poetry"))
+                .count();
+        System.out.println(count);
+    }
+
+
+}
